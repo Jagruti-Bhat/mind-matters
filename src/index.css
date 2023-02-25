@@ -42,3 +42,30 @@ code {
 .grid{
   margin-top: 100px;
 }
+
+.footer{
+  margin-top: 70px;;
+}
+
+.emotions{
+  margin-top:50px;
+  font-family: 'Tilt Warp';
+}
+
+.sos-class{
+  margin: 80px;
+  font-family: 'Labrada';
+  
+}
+
+.emotions-emoji{
+  width:80%;
+  height: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.emoji-card{
+  width:100%;
+  height: 80%;
+}

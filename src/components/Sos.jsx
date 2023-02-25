@@ -1,43 +1,70 @@
-import React from "react";
-import sos from "../images/sos.jpg";
-import journal from "../images/journal.jpg";
-import session from "../images/session.jpg";
-import community from "../images/community.jpg";
-import sleep from "../images/sleep.jpg";
-import resources from "../images/resources.jpg";
+import React from 'react'
 import {Link} from "react-router-dom"
+import angry from "../images/angry.jpg"
+import empty from "../images/empty.jpg"
+import lonely from "../images/lonely.jpg"
+import panic from "../images/panic.png"
+import sad from "../images/sad.jpg"
+import stressed from "../images/stressed.png"
 
 
-const Cards = () => {
+const Sos = () => {
   return (
-    <><div className="grid grid-cols-3 gap-3">
-          <div class="flex justify-center">
+   <div>
+    <h1 className='text-4xl text-center	 ... emotions'>Learn more about Emotions: </h1>
+    <div className='sos-class ' >
+    
+    <p className='tracking-wide text-justify text-lg	'>SOS I feel is a tool for those davs when vou experience an overwhelming negative or uneasy emotion such as anxiety, panic attack, sadness etc.
+Please click on the feeling you would like to address today.
+
+SOS I Feel exercises are meant to help you break down this large overwhelming feeling and understand why you feel the way you feel and offer possible solutions to feel better.
+SOS I feel uses specific interventions within our control as human beings to self-regulate through self-awareness. When practised regularly, these interventions override unhelpful brain conditions and rewire the brain to in a happier and more fulfilling mindset by modifying the actual neural network of brain cells.
+SOS I Feel is based on the principles of CBT, Mindfulness - DBT, reflective therapy, REBT & affirmation Therapy.</p>
+   </div>
+   <div class="flex justify-center">
+  <div
+    class="block max-w-sm rounded-lg bg-white p-6 shadow-lg dark:bg-neutral-700">
+    <h5
+      class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+      NOTE:
+    </h5>
+    <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+     If you are experiencing suicidal thoughts please contact a suicide prevent helpline. Scroll to the bottom of the page for resources. If the negative emotion persists, please reach out to a professional. This program is not a substitute for professional counselling.</p>
+
+   
+    
+  </div>
+</div>
+
+
+<><div className="grid grid-cols-3 gap-3">
+          <div class="flex justify-center emoji-card">
               <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-                  <img class="rounded-t-lg" src={sos} alt="" />
+                  <img class="rounded-t-lg emotions-emoji" src={angry} alt="" />
                   <div class="p-6">
                   <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                          SOS: I Feel
+                          Feeling Angry
                       </h5>
                       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                          Emotional First Aid Tools to handle difficult emotions.
+                          I'm feeling angry today.
                       </p>
                       <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                           <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                          <Link to="/Sos">Explore</Link>
+                          <Link to="/Angry">Explore</Link>
                           </span>
                       </button>
                   </div>
               </div>
           </div>
-          <div class="flex justify-center">
+          <div class="flex justify-center emoji-card">
               <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-                  <img class="rounded-t-lg" src={journal} alt="" />
+                  <img class="rounded-t-lg emotions-emoji" src={stressed} alt="" />
                   <div class="p-6">
                       <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                          My Journal
+                          Feeling Stressed
                       </h5>
                       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                          Journal your difficult and beautiful emotions and document your day!
+                          I'm feeling very stressed today.
                       </p>
                       <p hidden>.</p>
                       <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
@@ -48,15 +75,15 @@ const Cards = () => {
                   </div>
               </div>
           </div>
-          <div class="flex justify-center">
+          <div class="flex justify-center emoji-card">
               <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-                  <img class="rounded-t-lg" src={session} alt="" />
+                  <img class="rounded-t-lg emotions-emoji" src={sad} alt="" />
                   <div class="p-6">
                       <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                          Happiness Coach
+                          Feeling sad
                       </h5>
                       <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                          Schedule therapy sessions with qualified psychologists.
+                          I'm feeling sad today.
                       </p>
                       <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                           <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -67,15 +94,15 @@ const Cards = () => {
               </div>
           </div>
       </div><div className="grid grid-cols-3 gap-3">
-              <div class="flex justify-center">
+              <div class="flex justify-center emoji-card">
                   <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-                      <img class="rounded-t-lg" src={community} alt="" />
+                      <img class="rounded-t-lg emotions-emoji" src={empty} alt="" />
                       <div class="p-6">
                           <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                              Happiness Community
+                              Feeling empty
                           </h5>
                           <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                              Join one of our communities to express your emotions in a group!
+                              I'm feeling empty today
                           </p>
                           <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                               <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -85,15 +112,15 @@ const Cards = () => {
                       </div>
                   </div>
               </div>
-              <div class="flex justify-center">
+              <div class="flex justify-center emoji-card">
                   <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-                      <img class="rounded-t-lg" src={sleep} alt="" />
+                      <img class="rounded-t-lg emotions-emoji" src={lonely} alt="" />
                       <div class="p-6">
                           <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                              Fixing Sleep cycles
+                              Feeling lonely
                           </h5>
                           <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                              Track your sleep cycles and fix them for better health
+                              I'm feeling lonely today
                           </p>
                           <p hidden>.</p>
                           <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
@@ -104,15 +131,15 @@ const Cards = () => {
                       </div>
                   </div>
               </div>
-              <div class="flex justify-center">
+              <div class="flex justify-center emoji-card">
                   <div class="block max-w-sm rounded-lg bg-white shadow-lg dark:bg-neutral-700">
-                      <img class="rounded-t-lg" src={resources} alt="" />
+                      <img class="rounded-t-lg emotions-emoji" src={panic} alt="" />
                       <div class="p-6">
                           <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-                              Educational Resources
+                              Panic Attack
                           </h5>
                           <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
-                              Our resources provide awareness on the various mental health issues.
+                              I'm having a panic attack.
                           </p>
                           <button class="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                               <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
@@ -124,9 +151,10 @@ const Cards = () => {
               </div>
           </div></>
 
+   </div>
 
-    
+   
   );
-};
+}
 
-export default Cards;
+export default Sos
