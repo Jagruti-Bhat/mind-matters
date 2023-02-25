@@ -1,0 +1,5 @@
+export {default as Home} from "./Home"
+export {default as Apple} from "./Apple"
+export {default as Navbar} from "./Navbar"
+export {default as Header} from "./Header"
+export {default as Cards} from "./Cards"
